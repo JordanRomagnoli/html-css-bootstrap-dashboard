@@ -17,19 +17,19 @@
 
     <body class="debug">
 
-        <header class="py-3 px-2">
-            <div class="row">
+        <header>
+            <div class="row py-3 px-2 g-0">
                 <div class="col-auto d-flex align-items-center">
                     <div class="logo_container">
                         <img src="img/logo.svg" class="w-100" alt="logo">
                     </div>
                 </div>
 
-                <div class="col d-flex align-items-center">
+                <div class="col d-flex align-items-center px-4">
                     <div class="input-group text-dark">
                         <span class="input-group-text rounded-0 border-0 my-input-search" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
                         <input type="search" class="form-control rounded-0 border-0 my-input-search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
-                      </div>
+                    </div>
                 </div>
 
                 <div class="col-auto d-flex align-items-center">
@@ -55,13 +55,84 @@
             </div>
         </header>
 
-        <main>
-            <!-- MAIN -->
-        </main>
+        <div class="row g-0">
 
-        <footer>
-            <!-- FOOTER -->
-        </footer>
+            <aside class="col-auto d-flex flex-column justify-content-between align-items-center px-3 py-4">
+                <nav class="w-100 p-2">
+                    <ul class="list-unstyled">
+                        <li class="py-2 mb-2"><a href="#nogo" class="text-decoration-none text-white py-1 px-3"><i class="fa-solid fa-house me-1"></i> Home</a></li>
+                        <li class="py-2 mb-2"><a href="#nogo" class="text-decoration-none text-white py-1 px-3"><i class="fa-solid fa-chart-simple me-1"></i> Stats</a></li>
+                        <li class="py-2 mb-2"><a href="#nogo" class="text-decoration-none text-white py-1 px-3"><i class="fa-solid fa-signal me-1"></i> Signals</a></li>
+                    </ul>
+                </nav>
+
+                <div class="text-white">
+                    <div class="w-100 p-2">
+                        <a href="#nogo" class="text-decoration-none text-white py-1 px-3"><i class="fa-solid fa-gear"></i> Admin</a>
+                    </div>
+                </div>
+            </aside>
+            
+            <main class="col">
+                <div class="row bg-primary text-white gx-0 py-4 px-2">
+                    <div class="col-7 d-flex flex-column justify-content-center">
+                        
+                        <div>
+                            <h2 class="fw-normal d-inline-block fs-1">
+                                Boolean
+                            </h2>
+                            <span class="badge my-badge rounded-pill mx-1">Piano blaze</span>
+                        </div>
+                        <div id="list-badge">
+                            <span class="badge my-badge rounded-pill mx-1">3 app</span>
+                            <span class="badge rounded-pill"><i class="fa-solid fa-angles-right"></i></span>
+                            <span class="badge my-badge rounded-pill mx-1">Boolean mobile app</span>
+                            <span class="badge my-badge rounded-pill mx-1">Boolean mobile app</span>
+                            <span class="badge my-badge rounded-pill mx-1">Boolean blog app</span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-3">
+                        <span>Studenti online negli ultimi 30 giorni</span>
+                        <h2 class="fw-normal fs-2 mt-2">
+                            125
+                        </h2>
+                    </div>
+
+                    <div class="col-2 text-white">
+                        <span>
+                            Nuovo Studente
+                        </span>
+
+                        <button class="btn border-white text-white mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+                        <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                ...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col"> <!-- PROSSIME CLASSI / F. A. Q. -->
+
+                    </div>
+
+                    <div class="col-auto"> <!-- TODO /  GRAPHIC -->
+
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>

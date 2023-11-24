@@ -11,7 +11,9 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+:root{
+    --bs-offcanvas-width: 900px;
+}
 
 /*
     HEADER
@@ -27,16 +29,52 @@ html{
     margin-right: 0;
 }
 
+.my-input-search:focus{
+    box-shadow: none
+}
+
+/*
+    ASIDE
+*/
+
+aside{
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
+}
+
+aside nav li:hover, aside > div > div:hover{
+    background-color: darkgray;
+}
 
 /*
     MAIN
 */
+
+.my-badge{
+    background-color: var(--bs-link-hover-color);
+}
 
 
 
 /*
     DEBUG
 */
+
+
+body > .row{
+    height: calc(100vh - 80px);
+}
+
+aside{
+
+    height: 100%;
+}
+
+main{
+    width: calc(100% - 200px);
+    height: 100%;
+}
+
 /* 
 header{
     min-height: 80px;
