@@ -3,12 +3,6 @@
     RESET 
 */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /*
     GENERAL
 */
@@ -18,34 +12,37 @@ html{
 }
 
 
+
 /*
     HEADER
 */
+
+.my-input-search{
+    background-color: var(--bs-gray-100);
+}
+
+.my-dropdown-toggle::after{
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 
 /*
     MAIN
 */
 
 
-/*
-    MEDIA QUERY
-*/
-
-/* Caso base: mobile piccolo */
-@media screen and (min-width: 480px){
-}
-/* Caso: mobile grande*/
-@media screen and (min-width: 576px){
-}
-/* Caso: tablet*/
-@media screen and (min-width: 768px){
-}
-/* Caso: desktop*/
-@media screen and (min-width: 992px){
-}
-
-
 
 /*
     DEBUG
 */
+/* 
+header{
+    min-height: 80px;
+} */
+
+/* header .col-auto, header .col{
+    border: 1px dashed red;
+    min-height: 80px;
+}  */
