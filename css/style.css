@@ -78,28 +78,14 @@ main{
 }
 
 
-@media screen and (min-width: 992px;){
-	.my-off-canvas{
-		max-width: 50%;
-	}
+#offcanvasRight{
+    width: 100%;
+}
+
+@media screen and (min-width: 992px){
+	#offcanvasRight{
+        width: 50%;
+    }
 }
 
 
-/*
-    DEBUG
-*/
-
-
-
-
-
-
-/* 
-header{
-    min-height: 80px;
-} */
-
-/* header .col-auto, header .col{
-    border: 1px dashed red;
-    min-height: 80px;
-}  */
