@@ -34,7 +34,7 @@ body > .row{
     margin-right: 0;
 }
 
-.resize{
+.logo_container > img:last-child{
     height: 50px;
 }
 
