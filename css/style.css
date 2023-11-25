@@ -15,6 +15,11 @@ html{
     --bs-offcanvas-width: 900px;
 }
 
+
+body > .row{
+    height: calc(100vh - 80px);
+}
+
 /*
     HEADER
 */
@@ -29,15 +34,19 @@ html{
     margin-right: 0;
 }
 
+.resize{
+    height: 50px;
+}
+
 .my-input-search:focus{
     box-shadow: none
 }
-
 /*
     ASIDE
 */
 
 aside{
+    height: 100%;
     background-image: url(../img/sidebar-bg.png);
     background-color: #051e34;
 }
@@ -50,10 +59,30 @@ aside nav li:hover, aside > div > div:hover{
     MAIN
 */
 
+main{
+    width: calc(100% - 200px);
+    height: 100%;
+}
+
 .my-badge{
     background-color: var(--bs-link-hover-color);
 }
 
+.my-icon{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: lightcoral;
+}
+
+
+@media screen and (min-width: 992px;){
+	.my-off-canvas{
+		max-width: 50%;
+	}
+}
 
 
 /*
@@ -61,19 +90,9 @@ aside nav li:hover, aside > div > div:hover{
 */
 
 
-body > .row{
-    height: calc(100vh - 80px);
-}
 
-aside{
 
-    height: 100%;
-}
 
-main{
-    width: calc(100% - 200px);
-    height: 100%;
-}
 
 /* 
 header{
