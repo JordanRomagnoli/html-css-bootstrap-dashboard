@@ -13,11 +13,12 @@ html{
 
 :root{
     --bs-offcanvas-width: 900px;
+    --main-aside-height: calc(100vh - 80px);
 }
 
 
 body > .row{
-    height: calc(100vh - 80px);
+    height: var(--main-aside-height);
 }
 
 /*
@@ -60,7 +61,6 @@ aside nav li:hover, aside > div > div:hover{
 */
 
 main{
-    width: calc(100% - 200px);
     height: 100%;
 }
 
