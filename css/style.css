@@ -42,6 +42,16 @@ body > .row{
 .my-input-search:focus{
     box-shadow: none
 }
+
+header .input-group > span {
+    border-radius: 15px 0 0 15px;
+}
+
+
+header .input-group > input {
+    border-radius: 0 15px 15px 0;
+}
+
 /*
     ASIDE
 */
